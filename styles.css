@@ -5,25 +5,49 @@
 body {
     background-color: rgba(8, 96, 196, 0.829);
     display: flex;
-    flex-direction: column;
     height: 100vh;
-    justify-content: space-between;
-    align-items: center;    
+    flex-direction: column;
+    align-items: center; 
 }
 
 .container {
-    display: flex;
-    background-color: skyblue;
-    justify-content: space-evenly;
+    display: flex; 
+    flex: 1;
     align-items: center;
+    gap: 100px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+padding: 5px;
+font-size: 1.2em;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
     width: 500px;
     height: 500px;
 }
+.row-grid {
+    display: flex;
+    flex: 1; 
+    background-color: antiquewhite;  
+}
 
-.container div {
-    box-sizing: border-box;
+.grid-item {
     background-color: white;
-    min-width: calc(500px / 16);
-    min-height: calc(500px / 16);
+    flex: 1;
     border: 1px rgba(0, 0, 0, 0.219) solid;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 1.2em;
 }
